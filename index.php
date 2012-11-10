@@ -40,7 +40,8 @@ font-family:Arial, Helvetica, sans-serif;
 font-size:12px;
 }
 
-.logo {margin-left:150px; 
+.logo {
+margin-left:150px; 
 background-image:url('logo.png'); 
 background-position:center top;
 background-repeat: no-repeat;
@@ -62,9 +63,9 @@ color:#333;
 
 #currencyBox {
 background-image:url('konvertor.png'); 
-background-position:center top;  -moz-border-radius:5px; 
-border-radius:5px; 
-overflow:hidden; padding:10px; 
+background-position:center top;  
+overflow:hidden; 
+padding:10px; 
 height:500px; 
 background-repeat: no-repeat;
 }
@@ -132,7 +133,6 @@ text-align:center;
 margin:60px 0 0 300px;
 }
 
-
 </style>
 </head>
 
@@ -149,11 +149,12 @@ margin:60px 0 0 300px;
     <div class="data">
         <label for="fromCurrency">IZ VALUTE:</label>
         <select class="list" name="fromCurrency" id="fromCurrency">
-          <option selected="" value="EUR">Euro - EUR</option>
-          <option value="USD">United States Dollars - USD</option>
-          <option value="GBP">United Kingdom Pounds - GBP</option>
+          <option selected="" value="EUR">Evro - EUR</option>
+	  <option value="RSD">Srpski dinar - RSD</option>
+          <option value="USD">Americki dolar - USD</option>
+          <option value="GBP">Britanska funta - GBP</option>
           <option value="CAD">Canada Dollars - CAD</option>
-          <option value="AUD">Australia Dollars - AUD</option>
+          <option value="AUD">Australijski dolar - AUD</option>
           <option value="JPY">Japan Yen - JPY</option>
           <option value="INR">India Rupees - INR</option>
           <option value="NZD">New Zealand Dollars - NZD</option>
@@ -171,16 +172,15 @@ margin:60px 0 0 300px;
           <option value="CNY">RMB (China Yuan Renminbi) - CNY</option>
           <option value="COP">Colombia Pesos - COP</option>
           <option value="CRC">Costa Rica Colones - CRC</option>
-          <option value="HRK">Croatia Kuna - HRK</option>
-          <option value="CZK">Czech Republic Koruny - CZK</option>
+          <option value="HRK">Hrvatska kuna - HRK</option>
+          <option value="CZK">Ceska kruna - CZK</option>
           <option value="DKK">Denmark Kroner - DKK</option>
           <option value="DOP">Dominican Republic Pesos - DOP</option>
           <option value="EGP">Egypt Pounds - EGP</option>
           <option value="EEK">Estonia Krooni - EEK</option>
-          <option value="EUR">Euro - EUR</option>
           <option value="FJD">Fiji Dollars - FJD</option>
           <option value="HKD">Hong Kong Dollars - HKD</option>
-          <option value="HUF">Hungary Forint - HUF</option>
+          <option value="HUF">Madjarska forinta - HUF</option>
           <option value="ISK">Iceland Kronur - ISK</option>
           <option value="INR">India Rupees - INR</option>
           <option value="IDR">Indonesia Rupiahs - IDR</option>
@@ -207,7 +207,6 @@ margin:60px 0 0 300px;
           <option value="RON">Romania New Lei - RON</option>
           <option value="RUB">Russia Rubles - RUB</option>
           <option value="SAR">Saudi Arabia Riyals - SAR</option>
-		  <option value="RSD">Serbian Dinar - RSD</option>
           <option value="SGD">Singapore Dollars - SGD</option>
           <option value="SKK">Slovakia Koruny - SKK</option>
           <option value="ZAR">South Africa Rand - ZAR</option>
@@ -231,11 +230,13 @@ margin:60px 0 0 300px;
     
     <div class="data">
         <label for="toCurrency">U VALUTU:</label>
-        <select class="list" name="toCurrency" id="toCurrency">
-          <option value="USD">United States Dollars - USD</option>
-          <option value="GBP">United Kingdom Pounds - GBP</option>
+	<select class="list" name="toCurrency" id="toCurrency">
+	  <option value="RSD">Srpski dinar - RSD</option>
+	  <option value="EUR">Evro - EUR</option>
+          <option value="USD">Americki dolar - USD</option>
+          <option value="GBP">Britanska funta - GBP</option>
           <option value="CAD">Canada Dollars - CAD</option>
-          <option value="AUD">Australia Dollars - AUD</option>
+          <option value="AUD">Australijski dolar - AUD</option>
           <option value="JPY">Japan Yen - JPY</option>
           <option value="INR">India Rupees - INR</option>
           <option value="NZD">New Zealand Dollars - NZD</option>
@@ -253,16 +254,15 @@ margin:60px 0 0 300px;
           <option value="CNY">RMB (China Yuan Renminbi) - CNY</option>
           <option value="COP">Colombia Pesos - COP</option>
           <option value="CRC">Costa Rica Colones - CRC</option>
-          <option value="HRK">Croatia Kuna - HRK</option>
-          <option value="CZK">Czech Republic Koruny - CZK</option>
+          <option value="HRK">Hrvatska kuna - HRK</option>
+          <option value="CZK">Ceska kruna - CZK</option>
           <option value="DKK">Denmark Kroner - DKK</option>
           <option value="DOP">Dominican Republic Pesos - DOP</option>
           <option value="EGP">Egypt Pounds - EGP</option>
           <option value="EEK">Estonia Krooni - EEK</option>
-          <option value="EUR">Euro - EUR</option>
           <option value="FJD">Fiji Dollars - FJD</option>
           <option value="HKD">Hong Kong Dollars - HKD</option>
-          <option value="HUF">Hungary Forint - HUF</option>
+          <option value="HUF">Madjarska forinta - HUF</option>
           <option value="ISK">Iceland Kronur - ISK</option>
           <option value="INR">India Rupees - INR</option>
           <option value="IDR">Indonesia Rupiahs - IDR</option>
@@ -289,7 +289,6 @@ margin:60px 0 0 300px;
           <option value="RON">Romania New Lei - RON</option>
           <option value="RUB">Russia Rubles - RUB</option>
           <option value="SAR">Saudi Arabia Riyals - SAR</option>
-		  <option value="RSD">Serbian Dinar - RSD</option>
           <option value="SGD">Singapore Dollars - SGD</option>
           <option value="SKK">Slovakia Koruny - SKK</option>
           <option value="ZAR">South Africa Rand - ZAR</option>
